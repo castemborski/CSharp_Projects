@@ -21,13 +21,13 @@ namespace Drawdy_Chapter4_9
         private void btnExit_Click(object sender, EventArgs e)
         {
             // Declare variables
-            const int DOLLAR_TOTAL = 100;
+            const int DOLLA_TOTAL = 100;
             const int QUARTER_TOTAL = 25;
             const int PENNY_TOTAL = 1;
             const int NICKEL_TOTAL = 5;
             const int DIME_TOTAL = 10;
 
-            int numQuarters, numPennies, numNickels, numDimes;
+            int numQuarterz, numPennies, numNickels, numDimes;
             double quarterTotal, pennyTotal, nickelTotal, dimeTotal, coinsTotal;
 
             // Get total of coins

@@ -127,7 +127,7 @@
             // 
             // btnCalc
             // 
-            this.btnCalc.Font = new System.Drawing.Font("MS PGothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalc.Font = new System.Drawing.Font("Times new roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalc.Location = new System.Drawing.Point(176, 340);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(111, 38);
