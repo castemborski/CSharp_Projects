@@ -197,4 +197,3 @@
         private System.Windows.Forms.Label lblResult;
     }
 }
-

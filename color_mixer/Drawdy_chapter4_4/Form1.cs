@@ -10,22 +10,32 @@ using System.Windows.Forms;
 
 namespace Drawdy_chapter4_4
 {
+    /// <summary>
+    /// Represents the main form of the application that allows users to mix colors based on selected radio buttons.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the click event of the mix button to change the background color based on selected colors.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnMix_Click(object sender, EventArgs e)
         {
-
             // Determine which radio buttons are checked
             if (rbFirstRed.Checked && rbSecondRed.Checked)
             {
                 this.BackColor = Color.Red;
             }
-            else if (rbFirstBlue.Checked &&  rbSecondBlue.Checked)
+            else if (rbFirstBlue.Checked && rbSecondBlue.Checked)
             {
                 this.BackColor = Color.Blue;
             }
@@ -39,15 +49,19 @@ namespace Drawdy_chapter4_4
             }
             else if ((rbFirstRed.Checked && rbSeconYellow.Checked) || (rbFirstYellow.Checked && rbSecondRed.Checked))
             {
-                this .BackColor = Color.Orange;
+                this.BackColor = Color.Orange;
             }
             else if ((rbFirstBlue.Checked && rbSeconYellow.Checked) || (rbFirstYellow.Checked && rbSecondBlue.Checked))
             {
                 this.BackColor = Color.Green;
             }
-
         }
 
+        /// <summary>
+        /// Handles the click event of the exit button to close the form.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             // Function that closes the form
