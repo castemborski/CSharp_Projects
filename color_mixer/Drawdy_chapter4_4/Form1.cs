@@ -10,22 +10,32 @@ using System.Windows.Forms;
 
 namespace Drawdy_chapter4_4
 {
+    /// <summary>
+    /// Represents the main form of the color mixer application.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnMix control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnMix_Click(object sender, EventArgs e)
         {
-
             // Determine which radio buttons are checked
             if (rbFirstRed.Checked && rbSecondRed.Checked)
             {
                 this.BackColor = Color.Red;
             }
-            else if (rbFirstBlue.Checked &&  rbSecondBlue.Checked)
+            else if (rbFirstBlue.Checked && rbSecondBlue.Checked)
             {
                 this.BackColor = Color.Blue;
             }
@@ -39,15 +49,19 @@ namespace Drawdy_chapter4_4
             }
             else if ((rbFirstRed.Checked && rbSeconYellow.Checked) || (rbFirstYellow.Checked && rbSecondRed.Checked))
             {
-                this .BackColor = Color.Orange;
+                this.BackColor = Color.Orange;
             }
             else if ((rbFirstBlue.Checked && rbSeconYellow.Checked) || (rbFirstYellow.Checked && rbSecondBlue.Checked))
             {
                 this.BackColor = Color.Green;
             }
-
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnExit control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             // Function that closes the form

@@ -11,6 +11,11 @@ namespace Drawdy_Chapter8_1
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// <remarks>
+        /// This method initializes the application, enables visual styles, 
+        /// sets the default text rendering to be compatible with Windows Forms, 
+        /// and starts the application with an instance of <see cref="Form1"/>.
+        /// </remarks>
         [STAThread]
         static void Main()
         {

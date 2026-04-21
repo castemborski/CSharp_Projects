@@ -369,4 +369,3 @@
         private System.Windows.Forms.Label lblProductTotal;
     }
 }
-

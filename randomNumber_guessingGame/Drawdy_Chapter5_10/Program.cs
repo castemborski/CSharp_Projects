@@ -6,11 +6,17 @@ using System.Windows.Forms;
 
 namespace Drawdy_Chapter5_10
 {
+    /// <summary>
+    /// Provides the main entry point for the application.
+    /// </summary>
     internal static class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// <remarks>
+        /// This method initializes the application and starts the main form.
+        /// </remarks>
         [STAThread]
         static void Main()
         {

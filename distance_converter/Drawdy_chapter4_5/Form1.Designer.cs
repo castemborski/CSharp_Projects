@@ -171,16 +171,54 @@
 
         #endregion
 
+        /// <summary>
+        /// Label for user input.
+        /// </summary>
         private System.Windows.Forms.Label lblEntry;
+
+        /// <summary>
+        /// TextBox for user input of distance to convert.
+        /// </summary>
         private System.Windows.Forms.TextBox txtEntry;
+
+        /// <summary>
+        /// Label to display the converted distance.
+        /// </summary>
         private System.Windows.Forms.Label lblOutput;
+
+        /// <summary>
+        /// TextBox to display the converted distance, disabled for user input.
+        /// </summary>
         private System.Windows.Forms.TextBox txtOutput;
+
+        /// <summary>
+        /// Button to trigger the conversion of distance.
+        /// </summary>
         private System.Windows.Forms.Button btnConvert;
+
+        /// <summary>
+        /// Button to exit the application.
+        /// </summary>
         private System.Windows.Forms.Button btnExit;
+
+        /// <summary>
+        /// GroupBox for selecting the unit to convert from.
+        /// </summary>
         private System.Windows.Forms.GroupBox grpBoxFrom;
+
+        /// <summary>
+        /// ListBox for selecting the unit to convert from.
+        /// </summary>
         private System.Windows.Forms.ListBox lstFrom;
+
+        /// <summary>
+        /// GroupBox for selecting the unit to convert to.
+        /// </summary>
         private System.Windows.Forms.GroupBox grpBoxTo;
+
+        /// <summary>
+        /// ListBox for selecting the unit to convert to.
+        /// </summary>
         private System.Windows.Forms.ListBox lstTo;
     }
 }
-

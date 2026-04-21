@@ -10,9 +10,12 @@ using System.Windows.Forms;
 
 namespace Drawdy_Exam2
 {
+    /// <summary>
+    /// Represents the main form of the soda inventory application.
+    /// </summary>
     public partial class Form1 : Form
     {
-        // declare variable for  grand total
+        // declare variable for grand total
         private double productTotal = 0;
 
         // declare sodas as fields in order to set default values
@@ -22,6 +25,9 @@ namespace Drawdy_Exam2
         private theProducts orangeSoda;
         private theProducts grapeSoda;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -72,6 +78,12 @@ namespace Drawdy_Exam2
             };
         }
 
+        /// <summary>
+        /// Handles the Click event of the Complete button.
+        /// Calculates the total price including tax and displays it.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnComplete_Click(object sender, EventArgs e)
         {
             // Kylir Drawdy
@@ -81,12 +93,10 @@ namespace Drawdy_Exam2
             double grandTotal = 0;
             double taxTotal = 0;
 
-
             // calculate tax total
             taxTotal = productTotal * SALES_TAX;
             // calculate grand total
             grandTotal = productTotal + taxTotal;
-            
 
             // disable add buttons
             btnCherryColaAdd.Visible = false;
@@ -98,16 +108,27 @@ namespace Drawdy_Exam2
             // display totals
             lblTaxTotal.Text = "Total Tax: " + taxTotal.ToString("c");
             lblPretaxTotal.Text = "Total Before Tax: " + productTotal.ToString("c");
-            lblGrandTotal.Text = "Grand Total: "+ grandTotal.ToString("c");
-            
+            lblGrandTotal.Text = "Grand Total: " + grandTotal.ToString("c");
         }
 
+        /// <summary>
+        /// Handles the Click event of the Exit button.
+        /// Closes the application.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             // Kylie Drawdy
             this.Close();
         }
 
+        /// <summary>
+        /// Handles the Click event of the Grape Add button.
+        /// Adds a grape soda to the total if available.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnGrapeAdd_Click(object sender, EventArgs e)
         {
             // Kylie Drawdy
@@ -127,10 +148,15 @@ namespace Drawdy_Exam2
                 // add soda amount to grand total and display in text box
                 productTotal += grapeSoda.Price;
                 lblProductTotal.Text = productTotal.ToString("c");
-
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the Orange Add button.
+        /// Adds an orange soda to the total if available.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnOrangeAdd_Click(object sender, EventArgs e)
         {
             // Kylie Drawdy
@@ -153,6 +179,12 @@ namespace Drawdy_Exam2
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the Cream Add button.
+        /// Adds a cream soda to the total if available.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnCreamAdd_Click(object sender, EventArgs e)
         {
             // Kylie Drawdy
@@ -175,6 +207,12 @@ namespace Drawdy_Exam2
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the Regular Cola Add button.
+        /// Adds a regular cola to the total if available.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnColaRegAdd_Click(object sender, EventArgs e)
         {
             // Kylie Drawdy
@@ -197,6 +235,12 @@ namespace Drawdy_Exam2
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the Cherry Cola Add button.
+        /// Adds a cherry cola to the total if available.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnCherryColaAdd_Click(object sender, EventArgs e)
         {
             // Kylie Drawdy

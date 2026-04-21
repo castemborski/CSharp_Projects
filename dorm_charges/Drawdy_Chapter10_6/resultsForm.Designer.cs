@@ -130,8 +130,17 @@
         private System.Windows.Forms.Label lblMealTotalTitle;
         private System.Windows.Forms.Label lblTotalChargesTitle;
         private System.Windows.Forms.Button btnExit;
+        /// <summary>
+        /// Label displaying the total dormitory charges.
+        /// </summary>
         public System.Windows.Forms.Label lblDormTotal;
+        /// <summary>
+        /// Label displaying the total meal plan charges.
+        /// </summary>
         public System.Windows.Forms.Label lblMealTotal;
+        /// <summary>
+        /// Label displaying the grand total of all charges.
+        /// </summary>
         public System.Windows.Forms.Label lblGrandTotal;
     }
 }

@@ -110,11 +110,29 @@
 
         #endregion
 
+        /// <summary>
+        /// Label to display the title of the application.
+        /// </summary>
         private System.Windows.Forms.Label lblTitle;
+
+        /// <summary>
+        /// PictureBox to display the first die.
+        /// </summary>
         private System.Windows.Forms.PictureBox picDice1;
+
+        /// <summary>
+        /// PictureBox to display the second die.
+        /// </summary>
         private System.Windows.Forms.PictureBox picDice2;
+
+        /// <summary>
+        /// Button to roll the dice.
+        /// </summary>
         private System.Windows.Forms.Button btnRoll;
+
+        /// <summary>
+        /// Button to exit the application.
+        /// </summary>
         private System.Windows.Forms.Button btnExit;
     }
 }
-
