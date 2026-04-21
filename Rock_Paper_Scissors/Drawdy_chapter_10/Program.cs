@@ -6,6 +6,9 @@ using System.Windows.Forms;
 
 namespace Drawdy_chapter_10
 {
+    /// <summary>
+    /// Provides the main entry point for the application.
+    /// </summary>
     internal static class Program
     {
         /// <summary>

@@ -11,13 +11,25 @@ using System.Windows.Forms;
 
 namespace Drawdy_chapter4_5
 {
+    /// <summary>
+    /// Represents the main form for the distance converter application.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the click event of the convert button.
+        /// Converts the input distance from one unit to another based on user selection.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnConvert_Click(object sender, EventArgs e)
         {
             // Declare variables
@@ -84,11 +96,16 @@ namespace Drawdy_chapter4_5
                 convertedNumber = -1;
             }
 
-            // Store comverted number in output text box
+            // Store converted number in output text box
             txtOutput.Text = convertedNumber.ToString();
         }
 
-        // Function that closes form
+        /// <summary>
+        /// Handles the click event of the exit button.
+        /// Closes the form.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();

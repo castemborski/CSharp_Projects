@@ -442,4 +442,3 @@
         private System.Windows.Forms.PictureBox picCola;
     }
 }
-

@@ -10,19 +10,29 @@ using System.Windows.Forms;
 
 namespace Drawdy_Chapter6_5
 {
+    /// <summary>
+    /// Represents the main form for the repair calculator application.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
-        // Declare gloabal variable
+        // Declare global variable
         const double OIL_CHANGE = 26, LUBE_JOB = 18, RADIATOR_FLUSH = 30, TRANS_FLUSH = 80, INSPECTION_FEE = 15, MUFFLER_REPLACE = 100;
         const double TIRE_ROTATE = 20, TAX_FEE = 0.06;
 
         double partsTaxFee = 0, partsCharge = 0, laborFee = 0;
 
+        /// <summary>
+        /// Calculates the total charges for oil and lube services based on selected checkboxes.
+        /// </summary>
+        /// <returns>The total oil and lube charges.</returns>
         private double OilLubeCharges()
         {
             // create placeholder variable for if statement
@@ -38,11 +48,14 @@ namespace Drawdy_Chapter6_5
                 oilLubeFees += LUBE_JOB;
             }
 
-            // return oillubefees total
+            // return oil lube fees total
             return oilLubeFees;
-            
         }
 
+        /// <summary>
+        /// Calculates the total charges for flush services based on selected checkboxes.
+        /// </summary>
+        /// <returns>The total flush charges.</returns>
         private double FlushCharges()
         {
             // create placeholder variable for if statement
@@ -63,6 +76,10 @@ namespace Drawdy_Chapter6_5
             return flushFees;
         }
 
+        /// <summary>
+        /// Calculates the total miscellaneous charges based on selected checkboxes.
+        /// </summary>
+        /// <returns>The total miscellaneous charges.</returns>
         private double MiscCharges()
         {
             // create placeholder variable for if statement
@@ -88,6 +105,10 @@ namespace Drawdy_Chapter6_5
             return miscFees;
         }
 
+        /// <summary>
+        /// Calculates the total other charges including labor and parts fees.
+        /// </summary>
+        /// <returns>The total other charges.</returns>
         private double OtherCharges()
         {
             // create placeholder variable for if statement
@@ -116,21 +137,37 @@ namespace Drawdy_Chapter6_5
 
             // Return total of other fees
             return otherFees;
-
         }
 
+        /// <summary>
+        /// Calculates the tax charges based on the total parts amount.
+        /// </summary>
+        /// <param name="partsTotal">The total amount of parts.</param>
+        /// <returns>The calculated tax on parts.</returns>
         private double TaxCharges(double partsTotal)
         {
             // multiply parts by tax to get total
             return partsTotal * TAX_FEE;
         }
 
+        /// <summary>
+        /// Calculates the grand total of all charges.
+        /// </summary>
+        /// <param name="oilLubeFees">The total oil and lube fees.</param>
+        /// <param name="flushFees">The total flush fees.</param>
+        /// <param name="miscFees">The total miscellaneous fees.</param>
+        /// <param name="otherFees">The total other fees.</param>
+        /// <param name="partsTax">The tax on parts.</param>
+        /// <returns>The grand total of all charges.</returns>
         private double TotalCharges(double oilLubeFees, double flushFees, double miscFees, double otherFees, double partsTax)
         {
             // add up all charges for the grand total
             return oilLubeFees + flushFees + miscFees + otherFees + partsTax;
         }
 
+        /// <summary>
+        /// Clears the selected checkboxes in the Oil and Lube group.
+        /// </summary>
         private void ClearOilLube()
         {
             // Clear check boxes in Oil and Lube group
@@ -138,6 +175,9 @@ namespace Drawdy_Chapter6_5
             chkLubeJob.Checked = false;
         }
 
+        /// <summary>
+        /// Clears the selected checkboxes in the Flushes group.
+        /// </summary>
         private void ClearFlushes()
         {
             // Clear check boxes in Flushes group
@@ -145,6 +185,9 @@ namespace Drawdy_Chapter6_5
             chkTransFlush.Checked = false;
         }
 
+        /// <summary>
+        /// Clears the selected checkboxes in the Misc group.
+        /// </summary>
         private void ClearMisc()
         {
             // Clear check boxes in Misc group
@@ -153,6 +196,9 @@ namespace Drawdy_Chapter6_5
             chkTireRotation.Checked = false;
         }
 
+        /// <summary>
+        /// Clears the text boxes in the Parts and Labor group.
+        /// </summary>
         private void ClearOther()
         {
             // Clear all text boxes in Parts and Labor group
@@ -160,6 +206,9 @@ namespace Drawdy_Chapter6_5
             txtParts.Text = string.Empty;
         }
 
+        /// <summary>
+        /// Clears all labels in the Summary group.
+        /// </summary>
         private void ClearFees()
         {
             // Clear all labels in Summary group
@@ -169,7 +218,11 @@ namespace Drawdy_Chapter6_5
             lblTotalResult.Text = string.Empty;
         }
 
-
+        /// <summary>
+        /// Handles the click event of the Calculate button.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnCalc_Click(object sender, EventArgs e)
         {
             // Declare variables and run them through methods
@@ -186,11 +239,16 @@ namespace Drawdy_Chapter6_5
             lblPartsResult.Text = partsCharge.ToString("c");
             lblTaxResult.Text = partsTaxFee.ToString("c");
 
-            // Run all charges though total charges method and output to label result
+            // Run all charges through total charges method and output to label result
             double grandTotal = TotalCharges(oilLubeFees, flushFees, miscFees, otherFees, partsTaxFee);
             lblTotalResult.Text = grandTotal.ToString("c");
         }
 
+        /// <summary>
+        /// Handles the click event of the Clear button.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnClear_Click(object sender, EventArgs e)
         {
             // On click clear all groups
@@ -201,6 +259,11 @@ namespace Drawdy_Chapter6_5
             ClearMisc();
         }
 
+        /// <summary>
+        /// Handles the click event of the Exit button.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             // Close form on press

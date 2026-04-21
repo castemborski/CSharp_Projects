@@ -11,13 +11,24 @@ using System.Windows.Forms;
 
 namespace Drawdy_Chapter8_1
 {
+    /// <summary>
+    /// Represents the main form of the application that allows users to input a string and count the number of words in it.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the click event of the submit button. It retrieves the text from the input box, counts the words, and displays the result.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             // Kylie Drawdy
@@ -34,10 +45,13 @@ namespace Drawdy_Chapter8_1
 
             // output
             lblResult.Text = "Number of Words: " + totalWords.ToString();
-
         }
 
-        // method to count words in string
+        /// <summary>
+        /// Counts the number of words in the specified string.
+        /// </summary>
+        /// <param name="str">The string to count words in.</param>
+        /// <returns>The number of words in the string.</returns>
         private int countWords(string str)
         {
             // Declare varuables 

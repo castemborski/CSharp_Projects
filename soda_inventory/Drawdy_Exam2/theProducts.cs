@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Drawdy_Exam2
 {
+    /// <summary>
+    /// Represents a product with a name, description, price, and quantity.
+    /// </summary>
     internal class theProducts
     {
         // Kylie Drawdy
@@ -15,7 +18,9 @@ namespace Drawdy_Exam2
         private double _price;
         private int _quantity;
 
-        // constructor that sets default values for properties
+        /// <summary>
+        /// Initializes a new instance of the <see cref="theProducts"/> class with default values.
+        /// </summary>
         public theProducts()
         {
             // assign appropriate default values to properties
@@ -25,7 +30,12 @@ namespace Drawdy_Exam2
             _quantity = 5;
         }
 
-        // getter and setter for name
+        /// <summary>
+        /// Gets or sets the name of the product.
+        /// </summary>
+        /// <value>
+        /// The name of the product.
+        /// </value>
         public string Name
         {
             // get and return variable
@@ -40,7 +50,12 @@ namespace Drawdy_Exam2
             }
         }
 
-        // getter and setter for price
+        /// <summary>
+        /// Gets or sets the price of the product.
+        /// </summary>
+        /// <value>
+        /// The price of the product.
+        /// </value>
         public double Price
         {
             // get and return variable
@@ -55,7 +70,12 @@ namespace Drawdy_Exam2
             }
         }
 
-        // getter and setter for description
+        /// <summary>
+        /// Gets or sets the description of the product.
+        /// </summary>
+        /// <value>
+        /// The description of the product.
+        /// </value>
         public string Description
         {
             // get and return variable
@@ -70,7 +90,12 @@ namespace Drawdy_Exam2
             }
         }
 
-        // getter and setter for quantity
+        /// <summary>
+        /// Gets or sets the quantity of the product in stock.
+        /// </summary>
+        /// <value>
+        /// The quantity of the product.
+        /// </value>
         public int Quantity
         {
             // get and return variable

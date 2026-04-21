@@ -66,7 +66,7 @@
             // 
             this.grpOilLube.Controls.Add(this.chkLubeJob);
             this.grpOilLube.Controls.Add(this.chkOilChange);
-            this.grpOilLube.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpOilLube.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.grpOilLube.Location = new System.Drawing.Point(12, 12);
             this.grpOilLube.Name = "grpOilLube";
             this.grpOilLube.Size = new System.Drawing.Size(162, 125);
@@ -79,7 +79,7 @@
             this.grpMisc.Controls.Add(this.chkTireRotation);
             this.grpMisc.Controls.Add(this.chkReplaceMuffler);
             this.grpMisc.Controls.Add(this.chkInspection);
-            this.grpMisc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpMisc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.grpMisc.Location = new System.Drawing.Point(12, 153);
             this.grpMisc.Name = "grpMisc";
             this.grpMisc.Size = new System.Drawing.Size(162, 125);
@@ -91,7 +91,7 @@
             // 
             this.grpFlushes.Controls.Add(this.chkTransFlush);
             this.grpFlushes.Controls.Add(this.chkRadiatorFlush);
-            this.grpFlushes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpFlushes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.grpFlushes.Location = new System.Drawing.Point(211, 12);
             this.grpFlushes.Name = "grpFlushes";
             this.grpFlushes.Size = new System.Drawing.Size(162, 125);
@@ -105,7 +105,7 @@
             this.grpPartsLabor.Controls.Add(this.txtParts);
             this.grpPartsLabor.Controls.Add(this.lblLabor);
             this.grpPartsLabor.Controls.Add(this.lblParts);
-            this.grpPartsLabor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpPartsLabor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.grpPartsLabor.Location = new System.Drawing.Point(211, 153);
             this.grpPartsLabor.Name = "grpPartsLabor";
             this.grpPartsLabor.Size = new System.Drawing.Size(162, 125);
@@ -123,7 +123,7 @@
             this.grpSummary.Controls.Add(this.lblTax);
             this.grpSummary.Controls.Add(this.lblPartsSummary);
             this.grpSummary.Controls.Add(this.lblServiceLabor);
-            this.grpSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.grpSummary.Location = new System.Drawing.Point(12, 284);
             this.grpSummary.Name = "grpSummary";
             this.grpSummary.Size = new System.Drawing.Size(361, 131);
@@ -133,7 +133,7 @@
             // 
             // btnCalc
             // 
-            this.btnCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnCalc.Location = new System.Drawing.Point(12, 429);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(104, 29);
@@ -144,7 +144,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnExit.Location = new System.Drawing.Point(269, 429);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(104, 29);
@@ -155,7 +155,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.btnClear.Location = new System.Drawing.Point(139, 429);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(104, 29);
@@ -394,4 +394,3 @@
         private System.Windows.Forms.Label LblServiceLaborResult;
     }
 }
-

@@ -10,14 +10,28 @@ using System.Windows.Forms;
 
 namespace Drawdy_chapter4_11
 {
+    /// <summary>
+    /// Represents the main form of the application that calculates time conversions from seconds.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
-        // Function to determine number of seconds
+        /// <summary>
+        /// Handles the Click event of the btnCalc button. 
+        /// Converts the number of seconds entered by the user into minutes, hours, and days, and displays the results.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <remarks>
+        /// If the input is not a valid number, an error message is displayed.
+        /// </remarks>
         private void btnCalc_Click(object sender, EventArgs e)
         {
             // Declare variables
@@ -26,7 +40,7 @@ namespace Drawdy_chapter4_11
             const double SECONDS_IN_DAY = 86400;
             double secondsEntered;
 
-            // Deterine number of seconds entered and assign to variable
+            // Determine number of seconds entered and assign to variable
             try
             {
                 secondsEntered = double.Parse(txtSecondsEntry.Text);
@@ -55,7 +69,12 @@ namespace Drawdy_chapter4_11
             }
         }
 
-        // Function to close program
+        /// <summary>
+        /// Handles the Click event of the btnExit button. 
+        /// Closes the application.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();

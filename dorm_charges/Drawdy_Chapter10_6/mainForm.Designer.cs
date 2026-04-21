@@ -97,6 +97,7 @@
             this.grpMeals.Size = new System.Drawing.Size(289, 118);
             this.grpMeals.TabIndex = 11;
             this.grpMeals.TabStop = false;
+            this.grpMeals.Text = "Meal Plans";
             // 
             // radioUnlimited
             // 
@@ -145,6 +146,7 @@
             this.grpDorm.Size = new System.Drawing.Size(289, 90);
             this.grpDorm.TabIndex = 12;
             this.grpDorm.TabStop = false;
+            this.grpDorm.Text = "Dormitories";
             // 
             // radioSuites
             // 
@@ -233,4 +235,3 @@
         private System.Windows.Forms.RadioButton radioAllen;
     }
 }
-
