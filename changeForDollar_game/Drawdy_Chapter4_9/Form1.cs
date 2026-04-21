@@ -10,14 +10,28 @@ using System.Windows.Forms;
 
 namespace Drawdy_Chapter4_9
 {
+    /// <summary>
+    /// Represents the main form of the application that calculates the total value of coins.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
-        // Function to calculate total of coins
+        /// <summary>
+        /// Handles the click event of the exit button to calculate the total of coins entered.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
+        /// <remarks>
+        /// This method retrieves the number of quarters, dimes, nickels, and pennies from the text boxes,
+        /// calculates the total value of the coins, and displays the result in a label.
+        /// </remarks>
         private void btnExit_Click(object sender, EventArgs e)
         {
             // Declare variables
@@ -27,7 +41,7 @@ namespace Drawdy_Chapter4_9
             const int NICKEL_TOTAL = 5;
             const int DIME_TOTAL = 10;
 
-            int numQuarterz, numPennies, numNickels, numDimes;
+            int numQuarters, numPennies, numNickels, numDimes;
             double quarterTotal, pennyTotal, nickelTotal, dimeTotal, coinsTotal;
 
             // Get total of coins
@@ -103,7 +117,11 @@ namespace Drawdy_Chapter4_9
             }
         }
         
-        // Close form on click
+        /// <summary>
+        /// Handles the click event of the calculate button to close the form.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnCalc_Click(object sender, EventArgs e)
         {
             this.Close();
