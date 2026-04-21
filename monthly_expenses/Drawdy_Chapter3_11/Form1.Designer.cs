@@ -209,21 +209,79 @@
 
         #endregion
 
+        /// <summary>
+        /// Label for displaying the loan payment prompt.
+        /// </summary>
         private System.Windows.Forms.Label lblLoanPayment;
+
+        /// <summary>
+        /// Label for displaying the insurance payment prompt.
+        /// </summary>
         private System.Windows.Forms.Label lblInsurancePayment;
+
+        /// <summary>
+        /// Label for displaying the gas payment prompt.
+        /// </summary>
         private System.Windows.Forms.Label lblGasPayment;
+
+        /// <summary>
+        /// Label for displaying the oil payment prompt.
+        /// </summary>
         private System.Windows.Forms.Label lblOilPayment;
+
+        /// <summary>
+        /// Label for displaying the tire payment prompt.
+        /// </summary>
         private System.Windows.Forms.Label lblTirePayment;
+
+        /// <summary>
+        /// Label for displaying the maintenance payment prompt.
+        /// </summary>
         private System.Windows.Forms.Label lblMaintenancePayment;
+
+        /// <summary>
+        /// TextBox for entering the loan payment amount.
+        /// </summary>
         private System.Windows.Forms.TextBox txtLoanPaymentEntry;
+
+        /// <summary>
+        /// TextBox for entering the insurance payment amount.
+        /// </summary>
         private System.Windows.Forms.TextBox txtInsurancePaymentEntry;
+
+        /// <summary>
+        /// TextBox for entering the gas payment amount.
+        /// </summary>
         private System.Windows.Forms.TextBox txtGasPaymentEntry;
+
+        /// <summary>
+        /// TextBox for entering the oil payment amount.
+        /// </summary>
         private System.Windows.Forms.TextBox txtOilPaymentEntry;
+
+        /// <summary>
+        /// TextBox for entering the tire payment amount.
+        /// </summary>
         private System.Windows.Forms.TextBox txtTirePaymentEntry;
+
+        /// <summary>
+        /// TextBox for entering the maintenance payment amount.
+        /// </summary>
         private System.Windows.Forms.TextBox txtMaintenancePaymentEntry;
+
+        /// <summary>
+        /// Button to calculate the total monthly and annual expenses.
+        /// </summary>
         private System.Windows.Forms.Button btnCalc;
+
+        /// <summary>
+        /// Label for displaying the total monthly expenses.
+        /// </summary>
         private System.Windows.Forms.Label lblTotalMonthly;
+
+        /// <summary>
+        /// Label for displaying the total annual expenses.
+        /// </summary>
         private System.Windows.Forms.Label lblTotalAnnual;
     }
 }
-

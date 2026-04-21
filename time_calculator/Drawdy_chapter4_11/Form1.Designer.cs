@@ -115,12 +115,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblSecondsEntry;
-        private System.Windows.Forms.Button btnCalc;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label lblResult;
-        private System.Windows.Forms.TextBox txtSecondsEntry;
+        private System.Windows.Forms.Label lblTitle; ///<summary>Label displaying the title of the application.</summary>
+        private System.Windows.Forms.Label lblSecondsEntry; ///<summary>Label prompting the user to enter the number of seconds.</summary>
+        private System.Windows.Forms.Button btnCalc; ///<summary>Button to trigger the calculation of time from seconds.</summary>
+        private System.Windows.Forms.Button btnExit; ///<summary>Button to exit the application.</summary>
+        private System.Windows.Forms.Label lblResult; ///<summary>Label to display the result of the calculation.</summary>
+        private System.Windows.Forms.TextBox txtSecondsEntry; ///<summary>TextBox for user input of seconds.</summary>
     }
 }
-

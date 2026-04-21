@@ -10,13 +10,24 @@ using System.Windows.Forms;
 
 namespace Drawdy_Chapter8_9
 {
+    /// <summary>
+    /// Represents the main form of the application that converts alphanumeric phone number representations to numeric format.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the click event of the calculate button to convert the entered alphanumeric string to its numeric representation.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnCalc_Click(object sender, EventArgs e)
         {
             // Kylie Drawdy
@@ -34,6 +45,11 @@ namespace Drawdy_Chapter8_9
             lblResult.Text = decipheredString;
         }
 
+        /// <summary>
+        /// Decodes an alphanumeric string into its numeric representation based on telephone keypad mappings.
+        /// </summary>
+        /// <param name="str">The alphanumeric string to decode.</param>
+        /// <returns>A string representing the numeric equivalent of the input string.</returns>
         private string stringDecode(string str)
         {
             // Kylie Drawdy

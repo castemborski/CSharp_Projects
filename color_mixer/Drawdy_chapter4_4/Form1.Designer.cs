@@ -185,16 +185,54 @@
 
         #endregion
 
+        /// <summary>
+        /// Radio button for selecting the first color: Red.
+        /// </summary>
         private System.Windows.Forms.RadioButton rbFirstRed;
+
+        /// <summary>
+        /// Radio button for selecting the first color: Blue.
+        /// </summary>
         private System.Windows.Forms.RadioButton rbFirstBlue;
+
+        /// <summary>
+        /// Radio button for selecting the first color: Yellow.
+        /// </summary>
         private System.Windows.Forms.RadioButton rbFirstYellow;
+
+        /// <summary>
+        /// Group box for the first color selection.
+        /// </summary>
         private System.Windows.Forms.GroupBox grpBxFirst;
+
+        /// <summary>
+        /// Group box for the second color selection.
+        /// </summary>
         private System.Windows.Forms.GroupBox grpBxSecond;
+
+        /// <summary>
+        /// Radio button for selecting the second color: Yellow.
+        /// </summary>
         private System.Windows.Forms.RadioButton rbSeconYellow;
+
+        /// <summary>
+        /// Radio button for selecting the second color: Blue.
+        /// </summary>
         private System.Windows.Forms.RadioButton rbSecondBlue;
+
+        /// <summary>
+        /// Radio button for selecting the second color: Red.
+        /// </summary>
         private System.Windows.Forms.RadioButton rbSecondRed;
+
+        /// <summary>
+        /// Button to mix the selected colors.
+        /// </summary>
         private System.Windows.Forms.Button btnMix;
+
+        /// <summary>
+        /// Button to exit the application.
+        /// </summary>
         private System.Windows.Forms.Button btnExit;
     }
 }
-

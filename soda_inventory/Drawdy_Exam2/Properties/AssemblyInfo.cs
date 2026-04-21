@@ -6,16 +6,16 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Drawdy_Exam2")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A project for Drawdy Exam 2.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Drawdy_Exam2")]
+[assembly: AssemblyCompany("Your Company Name")]
+[assembly: AssemblyProduct("Drawdy_Exam2 Product Name")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
-// to COM components.  If you need to access a type in this assembly from
+// to COM components. If you need to access a type in this assembly from
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
 

@@ -10,15 +10,20 @@
 
 namespace Drawdy_chapter4_4.Properties
 {
-
-
+    /// <summary>
+    /// Represents the application settings for the Drawdy chapter 4 application.
+    /// This class is generated and should not be modified manually.
+    /// </summary>
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
     {
-
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
 
+        /// <summary>
+        /// Gets the default instance of the <see cref="Settings"/> class.
+        /// </summary>
+        /// <value>The default <see cref="Settings"/> instance.</value>
         public static Settings Default
         {
             get

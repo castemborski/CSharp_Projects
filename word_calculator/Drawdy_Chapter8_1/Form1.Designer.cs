@@ -36,6 +36,9 @@
             // 
             // txtString
             // 
+            /// <summary>
+            /// TextBox for user input.
+            /// </summary>
             this.txtString.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtString.Location = new System.Drawing.Point(26, 66);
             this.txtString.Name = "txtString";
@@ -44,6 +47,9 @@
             // 
             // lblResult
             // 
+            /// <summary>
+            /// Label to display the result of the calculation.
+            /// </summary>
             this.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblResult.Location = new System.Drawing.Point(26, 125);
             this.lblResult.Name = "lblResult";
@@ -52,6 +58,9 @@
             // 
             // btnSubmit
             // 
+            /// <summary>
+            /// Button to submit the input for processing.
+            /// </summary>
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.Location = new System.Drawing.Point(63, 271);
             this.btnSubmit.Name = "btnSubmit";
@@ -63,6 +72,9 @@
             // 
             // lblTitle
             // 
+            /// <summary>
+            /// Label to display the title or instructions to the user.
+            /// </summary>
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(23, 29);
@@ -73,6 +85,9 @@
             // 
             // Form1
             // 
+            /// <summary>
+            /// Initializes a new instance of the <see cref="Form1"/> class.
+            /// </summary>
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(273, 363);
@@ -95,4 +110,3 @@
         private System.Windows.Forms.Label lblTitle;
     }
 }
-

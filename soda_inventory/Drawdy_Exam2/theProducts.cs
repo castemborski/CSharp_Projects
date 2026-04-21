@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Drawdy_Exam2
 {
+    /// <summary>
+    /// Represents a product with a name, description, price, and quantity.
+    /// </summary>
     internal class theProducts
     {
         // Kylie Drawdy
@@ -15,7 +18,9 @@ namespace Drawdy_Exam2
         private double _price;
         private int _quantity;
 
-        // constructor that sets default values for properties
+        /// <summary>
+        /// Initializes a new instance of the <see cref="theProducts"/> class with default values.
+        /// </summary>
         public theProducts()
         {
             // assign appropriate default values to properties
@@ -25,60 +30,92 @@ namespace Drawdy_Exam2
             _quantity = 5;
         }
 
-        // getter and setter for name
+        /// <summary>
+        /// Gets or sets the name of the product.
+        /// </summary>
         public string Name
         {
-            // get and return variable
+            /// <summary>
+            /// Gets the name of the product.
+            /// </summary>
+            /// <returns>The name of the product.</returns>
             get
             {
                 return _name;
             }
-            // set equal to value given to method
+            /// <summary>
+            /// Sets the name of the product.
+            /// </summary>
+            /// <param name="value">The name to set for the product.</param>
             set
             {
                 _name = value;
             }
         }
 
-        // getter and setter for price
+        /// <summary>
+        /// Gets or sets the price of the product.
+        /// </summary>
         public double Price
         {
-            // get and return variable
+            /// <summary>
+            /// Gets the price of the product.
+            /// </summary>
+            /// <returns>The price of the product.</returns>
             get
             {
                 return _price;
             }
-            // set equal to value given to method
+            /// <summary>
+            /// Sets the price of the product.
+            /// </summary>
+            /// <param name="value">The price to set for the product.</param>
             set
             {
                 _price = value;
             }
         }
 
-        // getter and setter for description
+        /// <summary>
+        /// Gets or sets the description of the product.
+        /// </summary>
         public string Description
         {
-            // get and return variable
+            /// <summary>
+            /// Gets the description of the product.
+            /// </summary>
+            /// <returns>The description of the product.</returns>
             get
             {
                 return _description;
             }
-            // set equal to value given to method
+            /// <summary>
+            /// Sets the description of the product.
+            /// </summary>
+            /// <param name="value">The description to set for the product.</param>
             set
             {
                 _description = value;
             }
         }
 
-        // getter and setter for quantity
+        /// <summary>
+        /// Gets or sets the quantity of the product.
+        /// </summary>
         public int Quantity
         {
-            // get and return variable
+            /// <summary>
+            /// Gets the quantity of the product.
+            /// </summary>
+            /// <returns>The quantity of the product.</returns>
             get
             {
                 return _quantity;
             }
-            // set equal to value given to method
+            /// <summary>
+            /// Sets the quantity of the product.
+            /// </summary>
+            /// <param name="value">The quantity to set for the product.</param>
             set
             {
                 _quantity = value;
