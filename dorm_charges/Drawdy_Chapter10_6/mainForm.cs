@@ -10,13 +10,25 @@ using System.Windows.Forms;
 
 namespace Drawdy_Chapter10_6
 {
+    /// <summary>
+    /// Represents the main form of the application that calculates dormitory and meal plan charges.
+    /// </summary>
     public partial class mainForm : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="mainForm"/> class.
+        /// </summary>
         public mainForm()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnCalc button.
+        /// Calculates the total charges for the selected dormitory and meal plan.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnCalc_Click(object sender, EventArgs e)
         {
             // Kylie Drawdy
@@ -89,6 +101,12 @@ namespace Drawdy_Chapter10_6
             myResultsForm.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnExit button.
+        /// Closes the main form.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             // Close the form

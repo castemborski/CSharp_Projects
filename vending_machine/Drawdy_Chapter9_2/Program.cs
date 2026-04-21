@@ -11,6 +11,10 @@ namespace Drawdy_Chapter9_2
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// <remarks>
+        /// This method initializes the application, enables visual styles, 
+        /// sets the default rendering mode for text, and starts the main form.
+        /// </remarks>
         [STAThread]
         static void Main()
         {

@@ -11,6 +11,9 @@ using System.Windows.Forms;
 
 namespace Drawdy_Chapter9_10
 {
+    /// <summary>
+    /// Represents the main form for the email lookup application.
+    /// </summary>
     public partial class Form1 : Form
     {
         // dictionary to hold contacts with names as keys and emails as values
@@ -18,6 +21,9 @@ namespace Drawdy_Chapter9_10
         // file for saving and retrieving contacts
         const string dictFile = "Dictionary.txt";
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -25,10 +31,14 @@ namespace Drawdy_Chapter9_10
             LoadContacts();
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnEnter control.
+        /// Looks up the email entered by the user and displays the associated name.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            // Kylie Drawdy
-
             // get email from lookup textbox
             string lookupEmail = txtLookupEmail.Text.Trim();
 
@@ -39,7 +49,8 @@ namespace Drawdy_Chapter9_10
                 string emailName = GetNameByEmail(lookupEmail);
                 // display name
                 lblLookupResult.Text = "Name: " + emailName;
-            } else
+            } 
+            else
             {
                 // display that email was not found
                 lblLookupResult.Text = "Email not found!";
@@ -49,16 +60,26 @@ namespace Drawdy_Chapter9_10
             txtLookupEmail.Clear();
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnExit control.
+        /// Closes the form.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             // close form
             this.Close();
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnAdd control.
+        /// Adds a new contact to the dictionary based on user input.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            // Kylie Drawdy
-
             // Get name from textbox
             string userName = txtAddName.Text.Trim();
             // Get email from textbox
@@ -80,6 +101,12 @@ namespace Drawdy_Chapter9_10
             txtAddEmail.Clear();
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnChange control.
+        /// Changes the email of an existing contact based on user input.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnChange_Click(object sender, EventArgs e)
         {
             // Get users current email
@@ -90,7 +117,7 @@ namespace Drawdy_Chapter9_10
             // check if either field is empty
             if (string.IsNullOrWhiteSpace(currentEmail) || string.IsNullOrWhiteSpace(newEmail))
             {
-                // SHow error message
+                // Show error message
                 lblChangeResult.Text = "Please Enter a Current and New Email Address!";
                 return;
             }
@@ -112,9 +139,14 @@ namespace Drawdy_Chapter9_10
             // clear both fields for new input
             txtChangeCurrentEmail.Clear();
             txtChangeNewEmail.Clear();
-
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnDelete control.
+        /// Deletes a contact from the dictionary based on user input.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnDelete_Click(object sender, EventArgs e)
         {
             // get user entered name
@@ -147,7 +179,11 @@ namespace Drawdy_Chapter9_10
             txtNameDelete.Clear();
         }
 
-        // method to add new contact to dictionary
+        /// <summary>
+        /// Adds a new contact to the dictionary.
+        /// </summary>
+        /// <param name="userName">The name of the user to add.</param>
+        /// <param name="userEmail">The email of the user to add.</param>
         private void AddContact(string userName, string userEmail)
         {
             // add or update contact in dict
@@ -156,7 +192,11 @@ namespace Drawdy_Chapter9_10
             lblAddResult.Text = "Contact Added!";
         }
 
-        // method to change email
+        /// <summary>
+        /// Changes the email of an existing contact.
+        /// </summary>
+        /// <param name="currentEmail">The current email of the user.</param>
+        /// <param name="newEmail">The new email to assign to the user.</param>
         private void ChangeEmail(string currentEmail, string newEmail)
         {
             // find information associated with current email
@@ -165,7 +205,12 @@ namespace Drawdy_Chapter9_10
             contacts[userName] = newEmail;
         }
 
-        // method to delete contact
+        /// <summary>
+        /// Deletes a contact from the dictionary.
+        /// </summary>
+        /// <param name="userName">The name of the user to delete.</param>
+        /// <param name="userEmail">The email of the user to delete.</param>
+        /// <returns><c>true</c> if the contact was successfully deleted; otherwise, <c>false</c>.</returns>
         private bool DeleteContact(string userName, string userEmail) 
         {
             // check if contact exists and if userEmail matches
@@ -181,10 +226,13 @@ namespace Drawdy_Chapter9_10
                 // return false if failed
                 return false;
             }
-
         }
 
-        // method to get information from email
+        /// <summary>
+        /// Retrieves the name associated with the specified email.
+        /// </summary>
+        /// <param name="userEmail">The email to look up.</param>
+        /// <returns>The name associated with the email, or <c>null</c> if not found.</returns>
         private string GetNameByEmail(string userEmail)
         {
             // loop through contacts
@@ -200,10 +248,11 @@ namespace Drawdy_Chapter9_10
 
             // return null if no value is found
             return null;
-
         }
 
-        // method to load contact from file when form loads
+        /// <summary>
+        /// Loads contacts from a file when the form loads.
+        /// </summary>
         private void LoadContacts()
         {
             // try catch statement to catch if there is an error accessing the file
@@ -245,7 +294,9 @@ namespace Drawdy_Chapter9_10
             }
         }
 
-        // method to save contacts when form closes
+        /// <summary>
+        /// Saves contacts to a file when the form closes.
+        /// </summary>
         private void SaveContact()
         {
             // try catch statement to catch error accessing file
@@ -261,14 +312,18 @@ namespace Drawdy_Chapter9_10
                         dictFile.WriteLine($"{contact.Key}, {contact.Value}");
                     }
                 }
-            } catch (Exception ex)
+            } 
+            catch (Exception ex)
             {
                 // display error message
                 MessageBox.Show(ex.Message);
             }
         }
 
-        // ensure contacts are saved before the form closes
+        /// <summary>
+        /// Ensures contacts are saved before the form closes.
+        /// </summary>
+        /// <param name="e">The <see cref="FormClosingEventArgs"/> instance containing the event data.</param>
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             // save contacts to file

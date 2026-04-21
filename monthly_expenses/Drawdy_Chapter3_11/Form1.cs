@@ -10,13 +10,24 @@ using System.Windows.Forms;
 
 namespace Drawdy_Chapter3_11
 {
+    /// <summary>
+    /// Represents the main form for calculating monthly and annual expenses.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the click event of the calculate button to compute total monthly and annual expenses.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnCalc_Click(object sender, EventArgs e)
         {
             // declare variables

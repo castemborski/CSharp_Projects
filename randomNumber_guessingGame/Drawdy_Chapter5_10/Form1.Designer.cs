@@ -116,12 +116,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblResult;
-        private System.Windows.Forms.Label lblGuess;
-        private System.Windows.Forms.TextBox txtGuess;
-        private System.Windows.Forms.Button btnCheck;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label lblTitle; ///<summary>Label to display the title of the game.</summary>
+        private System.Windows.Forms.Label lblResult; ///<summary>Label to display the result of the guess.</summary>
+        private System.Windows.Forms.Label lblGuess; ///<summary>Label prompting the user to enter their guess.</summary>
+        private System.Windows.Forms.TextBox txtGuess; ///<summary>TextBox for the user to input their guess.</summary>
+        private System.Windows.Forms.Button btnCheck; ///<summary>Button to check the user's guess.</summary>
+        private System.Windows.Forms.Button btnExit; ///<summary>Button to exit the application.</summary>
     }
 }
-

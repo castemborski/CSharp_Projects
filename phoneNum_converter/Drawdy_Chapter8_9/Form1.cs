@@ -10,13 +10,25 @@ using System.Windows.Forms;
 
 namespace Drawdy_Chapter8_9
 {
+    /// <summary>
+    /// Represents the main form of the application that handles user input and displays the decoded phone number.
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Form1"/> class.
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the click event of the calculate button. 
+        /// It retrieves the user input, decodes the phone number, and displays the result.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The event data.</param>
         private void btnCalc_Click(object sender, EventArgs e)
         {
             // Kylie Drawdy
@@ -34,6 +46,11 @@ namespace Drawdy_Chapter8_9
             lblResult.Text = decipheredString;
         }
 
+        /// <summary>
+        /// Decodes a string by converting letters to their corresponding phone number digits.
+        /// </summary>
+        /// <param name="str">The string to decode.</param>
+        /// <returns>A decoded string where letters are replaced by their corresponding phone number digits.</returns>
         private string stringDecode(string str)
         {
             // Kylie Drawdy

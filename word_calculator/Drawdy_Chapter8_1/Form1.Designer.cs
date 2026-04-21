@@ -89,10 +89,24 @@
 
         #endregion
 
+        /// <summary>
+        /// TextBox for user input.
+        /// </summary>
         private System.Windows.Forms.TextBox txtString;
+
+        /// <summary>
+        /// Label to display the result.
+        /// </summary>
         private System.Windows.Forms.Label lblResult;
+
+        /// <summary>
+        /// Button to submit the input.
+        /// </summary>
         private System.Windows.Forms.Button btnSubmit;
+
+        /// <summary>
+        /// Label to display the title or instructions.
+        /// </summary>
         private System.Windows.Forms.Label lblTitle;
     }
 }
-

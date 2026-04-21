@@ -67,6 +67,9 @@
             // 
             // btnCalc
             // 
+            /// <summary>
+            /// Button to calculate the total charges based on selected dormitory and meal plan.
+            /// </summary>
             this.btnCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalc.Location = new System.Drawing.Point(47, 290);
             this.btnCalc.Name = "btnCalc";
@@ -78,6 +81,9 @@
             // 
             // btnExit
             // 
+            /// <summary>
+            /// Button to exit the application.
+            /// </summary>
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(198, 290);
             this.btnExit.Name = "btnExit";
@@ -89,6 +95,9 @@
             // 
             // grpMeals
             // 
+            /// <summary>
+            /// Group box for selecting meal plans.
+            /// </summary>
             this.grpMeals.Controls.Add(this.radioUnlimited);
             this.grpMeals.Controls.Add(this.radio14Meals);
             this.grpMeals.Controls.Add(this.radio7Meals);
@@ -100,6 +109,9 @@
             // 
             // radioUnlimited
             // 
+            /// <summary>
+            /// Radio button for selecting unlimited meals.
+            /// </summary>
             this.radioUnlimited.AutoSize = true;
             this.radioUnlimited.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioUnlimited.Location = new System.Drawing.Point(15, 77);
@@ -112,6 +124,9 @@
             // 
             // radio14Meals
             // 
+            /// <summary>
+            /// Radio button for selecting 14 meals per week.
+            /// </summary>
             this.radio14Meals.AutoSize = true;
             this.radio14Meals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio14Meals.Location = new System.Drawing.Point(15, 47);
@@ -124,6 +139,9 @@
             // 
             // radio7Meals
             // 
+            /// <summary>
+            /// Radio button for selecting 7 meals per week.
+            /// </summary>
             this.radio7Meals.AutoSize = true;
             this.radio7Meals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio7Meals.Location = new System.Drawing.Point(15, 17);
@@ -136,6 +154,9 @@
             // 
             // grpDorm
             // 
+            /// <summary>
+            /// Group box for selecting dormitories.
+            /// </summary>
             this.grpDorm.Controls.Add(this.radioSuites);
             this.grpDorm.Controls.Add(this.radioFarthing);
             this.grpDorm.Controls.Add(this.radioPike);
@@ -148,6 +169,9 @@
             // 
             // radioSuites
             // 
+            /// <summary>
+            /// Radio button for selecting University Suites.
+            /// </summary>
             this.radioSuites.AutoSize = true;
             this.radioSuites.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioSuites.Location = new System.Drawing.Point(131, 49);
@@ -160,6 +184,9 @@
             // 
             // radioFarthing
             // 
+            /// <summary>
+            /// Radio button for selecting Farthing Hall.
+            /// </summary>
             this.radioFarthing.AutoSize = true;
             this.radioFarthing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioFarthing.Location = new System.Drawing.Point(131, 19);
@@ -172,6 +199,9 @@
             // 
             // radioPike
             // 
+            /// <summary>
+            /// Radio button for selecting Pike Hall.
+            /// </summary>
             this.radioPike.AutoSize = true;
             this.radioPike.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioPike.Location = new System.Drawing.Point(20, 49);
@@ -184,6 +214,9 @@
             // 
             // radioAllen
             // 
+            /// <summary>
+            /// Radio button for selecting Allen Hall.
+            /// </summary>
             this.radioAllen.AutoSize = true;
             this.radioAllen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioAllen.Location = new System.Drawing.Point(15, 19);
@@ -196,6 +229,9 @@
             // 
             // mainForm
             // 
+            /// <summary>
+            /// Initializes a new instance of the <see cref="mainForm"/> class.
+            /// </summary>
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(353, 364);
@@ -233,4 +269,3 @@
         private System.Windows.Forms.RadioButton radioAllen;
     }
 }
-

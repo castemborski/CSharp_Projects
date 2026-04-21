@@ -113,11 +113,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblResults;
-        private System.Windows.Forms.PictureBox picBoxRock;
-        private System.Windows.Forms.PictureBox picBoxPaper;
-        private System.Windows.Forms.PictureBox picBoxScissors;
+        private System.Windows.Forms.Label lblTitle; ///<summary>Label to display the title of the game.</summary>
+        private System.Windows.Forms.Label lblResults; ///<summary>Label to display the results of the game.</summary>
+        private System.Windows.Forms.PictureBox picBoxRock; ///<summary>PictureBox for the Rock option.</summary>
+        private System.Windows.Forms.PictureBox picBoxPaper; ///<summary>PictureBox for the Paper option.</summary>
+        private System.Windows.Forms.PictureBox picBoxScissors; ///<summary>PictureBox for the Scissors option.</summary>
     }
 }
-

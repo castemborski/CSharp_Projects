@@ -92,10 +92,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.TextBox txtNumber;
-        private System.Windows.Forms.Label lblResult;
-        private System.Windows.Forms.Button btnCalc;
+        private System.Windows.Forms.Label lblTitle; ///<summary>Label for the title of the form.</summary>
+        private System.Windows.Forms.TextBox txtNumber; ///<summary>TextBox for user input of the telephone number.</summary>
+        private System.Windows.Forms.Label lblResult; ///<summary>Label to display the result of the calculation.</summary>
+        private System.Windows.Forms.Button btnCalc; ///<summary>Button to trigger the calculation of the telephone number.</summary>
     }
 }
-

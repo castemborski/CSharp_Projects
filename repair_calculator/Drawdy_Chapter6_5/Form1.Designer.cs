@@ -394,4 +394,3 @@
         private System.Windows.Forms.Label LblServiceLaborResult;
     }
 }
-
